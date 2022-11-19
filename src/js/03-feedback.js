@@ -2,7 +2,7 @@ import throttle from 'lodash.throttle';
 
 const form = document.querySelector('form');
 
-form.addEventListener('input', _.throttle(handleInput, 500));
+form.addEventListener('input', throttle(handleInput, 500));
 
 const { email, message } = form.elements;
 
