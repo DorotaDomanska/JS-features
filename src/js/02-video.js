@@ -2,17 +2,21 @@ import Player from '@vimeo/player';
 import throttle from 'lodash.throttle';
 
 const player = new Player('handstick', {
-  id: 'vimeo-player',
+  id: '236203659',
   width: 640,
 });
 
-player.on('play', function () {
+player.on('play', () => {
   console.log('played the video!');
 });
 
-const savePlayerTime = ({ duration, percent, seconds }) => {
-  console.log(seconds);
-  localStorage.setItem('videoplayer-current-time', seconds);
-};
+player.getVideoTitle().then(title => {
+  console.log('title:', title);
+});
 
-player.on('timeupdate', savePlayerTime);
+// const savePlayerTime = ({ duration, percent, seconds }) => {
+//   console.log(seconds);
+//   localStorage.setItem('videoplayer-current-time', seconds);
+// };
+
+// player.on('timeupdate', savePlayerTime);
