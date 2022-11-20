@@ -25,10 +25,10 @@ const getLocalLastPlayedTime = () => {
   const defaultTime = 0;
   try {
     const locallySavedTime = localStorage.getItem('videoplayer-current-time');
-    if (!locallySavedTime) return defaultTime;
-
     const parsedTime = JSON.parse(locallySavedTime);
-    return Number(parsedTime);
+    if (!locallySavedTime || parsedTime >= 571.52) return defaultTime;
+
+    return parsedTime;
   } catch (error) {
     console.log({ error });
     return defaultTime;
