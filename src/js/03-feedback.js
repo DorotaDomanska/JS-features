@@ -29,6 +29,9 @@ form.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
+  if (email.value === '' || message.value === '') {
+    return alert('Please fill in all the fields!');
+  }
   console.log({ email: email.value, message: message.value });
   event.currentTarget.reset();
   localStorage.clear();

@@ -4,8 +4,6 @@ import { galleryItems } from './gallery-items';
 
 console.log(galleryItems);
 
-console.log(galleryItems);
-
 const list = document.querySelector('.gallery');
 
 const item = galleryItems
