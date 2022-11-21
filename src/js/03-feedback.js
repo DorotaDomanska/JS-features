@@ -21,8 +21,10 @@ const parsedData = JSON.parse(savedData);
 fillForm();
 
 function fillForm() {
-  email.value = parsedData.email || '';
-  message.value = parsedData.message || '';
+  if (savedData) {
+    email.value = parsedData.email;
+    message.value = parsedData.message;
+  }
 }
 
 form.addEventListener('submit', handleSubmit);
