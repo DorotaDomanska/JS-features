@@ -2,14 +2,14 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://DorotaDomanska.github.io/goit-js-hw-08-forked",
+  "homepage": "https://DorotaDomanska.github.io/JS-features",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-08-forked/"
+    "build": "parcel build src/*.html --public-url /JS-features/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DorotaDomanska/goit-js-hw-08-forked.git"
+    "url": "git+https://github.com/DorotaDomanska/JS-features.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
