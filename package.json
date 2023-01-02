@@ -1,8 +1,8 @@
 {
-  "name": "parcel-project-template",
+  "name": "JS-features",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://DorotaDomanska.github.io/JS-features",
+  "homepage": "https://DorotaDomanska.github.io/JS-features/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /JS-features/"
